@@ -8,13 +8,43 @@
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+
     <script type="text/javascript" src="./main.js"></script>
+
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      Hello word!
+      <fieldset class="style-field">
+        <legend>Personal information</legend>
+        <label class="form__field">
+          Surname:
+          <input
+           type="text"
+           id="fname"
+           name="fname"
+          >
+        </label><br>
+        <label class="form__field">
+          Name:
+          <input
+           type="text"
+           id="lname"
+           name="lname"
+          >
+        </label><br>
+        <label class="form__field">
+          How old are You?
+          <input
+           type="text"
+           minlength="1"
+           maxlength="3"
+           pattern="\d+"
+          >
+        </label>
+
+      </fieldset>
+
     </form>
   </body>
 </html>
