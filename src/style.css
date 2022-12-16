@@ -1,8 +1,11 @@
 /* styles go here */
 .style-field {
   margin-bottom: 20px;
+
 }
 
-.form__field {
+.form__field:not(:last-child) {
+  display: block;
   margin-bottom: 10px;
+
 }
